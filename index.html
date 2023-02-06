@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Responsive Layout</title>
 </head>
+
 <body>
     <header>
-        <div class="container flex just-between"> 
+        <div class="container flex just-between">
             <div class="logo">Logo</div>
             <div class="hamburger"> Menu</div>
             <nav class="main-nav">
@@ -24,50 +33,127 @@
         </div>
     </header>
 
-
+    <!-- main -->
     <main>
+        <!-- section get-demo -->
         <section class="get-demo">
             <div class="container">
                 <div class="row flex">
-                    <div class="col mt-30">
+                    <div class="col p-15 br-50">
                         <div class="col-debug">1</div>
                     </div>
-                    <div class="col mt-30">
+                    <div class="col p-15 br-50">
                         <div class="col-debug">2</div>
                     </div>
-                    <div class="col mt-30">
+                    <div class="col p-15 br-50">
                         <div class="col-debug">3</div>
                     </div>
-                    <div class="col mt-30">
+                    <div class="col p-15 br-50">
                         <div class="col-debug">4</div>
                     </div>
-                    <div class="col mt-30">
+                    <div class="col p-15 br-50">
                         <div class="col-debug">5</div>
                     </div>
                 </div>
 
             </div>
         </section>
+        <!-- /section get-demo -->
+        <!-- section planning -->
         <section class="planning">
             <div class="container">
                 <div class="row flex">
                     <div class="col">
-                        <div>strategic planning</div>
+                        <img src="img/planning1.png" alt="planning1">
+                        <h2>Strategic planning</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt perferendis qui provident
+                            illo minima aperiam, repellendus est velit ipsa dolore tempora aut odio quidem quod
+                            accusantium rerum consequatur cumque? Reiciendis?</p>
                     </div>
                     <div class="col">
-                        <div> app developement</div>
+                        <div class="box-app flex br-50">
+                            <img src="img/planning2.png" alt="planning2">
+                            <h3>App developement</h3>
+                            <p>Develop an on-demand app for your delivery business to reach your targeted custumers
+                                without any interruption.</p>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="testimonial"></section>
-        <section class="benefits"></section>
+        <!-- /section planning -->
+        <!-- section testimonials -->
+        <section class="testimonial">
+            <div class="container">
+                <h4>TESTIMONIALS</h4>
+                <h1>We are committed expert partners</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reiciendis perferendis vitae maxime
+                    suscipit! Expedita, nam minima totam quisquam ea nisi excepturi esse fugiat mollitia quibusdam,
+                    distinctio sed accusantium voluptatum!</p>
+                <div class="card mt-30">
+                    <div class="box-person flex br-50">
+                        <div class="box-img-person p-30">
+                            <img src="img/testimonial1.jpg" alt="testimonial1">
+                        </div>
+                        <div class="text p-25">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet molestiae, maiores
+                                placeat quasi sint qui excepturi assumenda itaque vero quia ipsa ipsam aperiam nam
+                                maxime illum reprehenderit tenetur unde.</p>
+                            <h3>NAT REYNOLDS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-30">
+                    <div class="box-person flex br-50">
+                        <div class="box-img-person p-30">
+                            <img src="img/testimonial2.jpg" alt="testimonial2">
+                        </div>
+                        <div class="text p-25">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet molestiae, maiores
+                                placeat quasi sint qui excepturi assumenda itaque vero quia ipsa ipsam aperiam nam
+                                maxime illum reprehenderit tenetur unde.</p>
+                            <h3>CELIA ALMEDA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-30">
+                    <div class="box-person flex br-50">
+                        <div class="box-img-person p-30">
+                            <img src="img/testimonial3.jpg" alt="testimonial3">
+                        </div>
+                        <div class="text p-25">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet molestiae, maiores
+                                placeat quasi sint qui excepturi assumenda itaque vero quia ipsa ipsam aperiam nam
+                                maxime illum reprehenderit tenetur unde.</p>
+                            <h3>BOB ROBERTS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section testimonials -->
+        <section class="benefits">
+            <div class="container">
+                <h1>Benefits of working with us</h1>
+                <div class="row flex">
+                    <div class="card p-15">1</div>
+                    <div class="card p-15">2</div>
+                    <div class="card p-15">3</div>
+                    <div class="card p-15">4</div>
+                    <div class="card p-15">5</div>
+                    <div class="card p-15">6</div>
+                </div>
+
+            </div>
+        </section>
         <section class="about-us"></section>
         <section class="get-started"></section>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
