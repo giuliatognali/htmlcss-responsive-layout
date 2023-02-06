@@ -33,6 +33,16 @@ Common
 .inline-list{
     list-style: none;
 }
+
+.mt-30{
+    margin-top: 1.875rem;
+}
+
+
+.col {
+    width: 100%;
+}
+
 /**********************
 header
 ***********************/
@@ -53,6 +63,10 @@ header .main-nav{
         display: none;
     }
 
+    .planning .col{
+        width: 410px;
+    }
+
 }   
 
 /**********************
@@ -62,24 +76,39 @@ main
     flex-wrap: wrap
 }
 
-.col {
-     width: 100%;
-}
 
 
 
-.col-debug{
+.get-demo .col-debug{
     background-color:var(--first-color-light);
-    height: 100px;
+    height: 300px;
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    .col{
+    .get-demo .col{
          width: calc(100% / 3);
     }
-    .col:first-child{
+    .get-demo .col:first-child{
         width: calc((100% / 3) * 2);
     }
 }
+.get-demo{
+    margin-bottom: 80px;
+}  
+
+.planning{
+    background-color: var(--secondary-color);
+
+}
+
+.planning .row{
+    justify-content: center;
+
+}
+
+.planning .col{
+    height: 500px;
+    background-color: beige;
     
+}
