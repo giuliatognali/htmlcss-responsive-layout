@@ -14,6 +14,15 @@ Typo
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+#free{
+    font-size: 4em;
+    color: #fdc15f;
+}
+
+.underline{
+    text-decoration: underline;
+}
 /**********************
 Common
 ***********************/
@@ -26,6 +35,7 @@ Common
 
 .flex{
     display: flex;
+    justify-content: center;
 }
 
 .just-between{
@@ -40,7 +50,9 @@ Common
 .inline-list{
     list-style: none;
 }
-
+.m-30{
+    margin: 15px;
+}
 .mt-30{
     margin-top: 1.875rem;
 }
@@ -64,6 +76,18 @@ img{
 
 .br-50{
     border-radius: 3.125rem;
+}
+
+.btn{
+    background-color: var(--secondary-color);
+    padding: 15px 50px;
+    border: none;
+    border-radius: 25px;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--secondary-color);
 }
 /**********************
 header
@@ -119,7 +143,9 @@ main
     border-radius: 50%;
 }
 
-
+.testimonial{
+    text-align: center;
+}
 .box-person{
     flex-direction: column;
     align-items: center;
@@ -151,8 +177,15 @@ main
 
 
 
-
-
+.about-us{
+    background-color: var(--secondary-color);
+    
+}
+.small-container{
+    text-align: center;
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
 
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -171,6 +204,9 @@ main
     .box-person .text{
         text-align: left;
     }
+    .benefits .card{
+        width: calc(100% / 2 - 60px);
+    }
 }
 
 /* DESKTOP */
@@ -185,5 +221,13 @@ main
     .planning .col{
         width: 410px;
     }
+    .benefits .card{
+        width: calc(100% / 3 - 105px);
+    }
+
+    .container{
+        max-width: 71.25rem;
+        margin: 0 auto;
+}
 
 }
