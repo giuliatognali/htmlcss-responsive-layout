@@ -1,0 +1,85 @@
+/**********************
+Reset
+***********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************
+Common
+***********************/
+
+:root{
+    --first-color:#0084fd;
+    --first-color-light: #b5ddff;
+    --secondary-color:#9792e4;
+}
+
+.flex{
+    display: flex;
+}
+
+.just-between{
+    justify-content: space-between;
+}
+
+.container{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+.inline-list{
+    list-style: none;
+}
+/**********************
+header
+***********************/
+header {
+    background-color: var(--first-color);
+    color: white;
+} 
+header .main-nav{
+    display: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    header .main-nav{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+
+}   
+
+/**********************
+main
+***********************/
+.row{
+    flex-wrap: wrap
+}
+
+.col {
+     width: 100%;
+}
+
+
+
+.col-debug{
+    background-color:var(--first-color-light);
+    height: 100px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .col{
+         width: calc(100% / 3);
+    }
+    .col:first-child{
+        width: calc((100% / 3) * 2);
+    }
+}
+    
