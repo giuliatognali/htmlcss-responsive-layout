@@ -49,6 +49,7 @@ Common
 
 .inline-list{
     list-style: none;
+    align-items: center;
 }
 .m-30{
     margin: 15px;
@@ -58,6 +59,9 @@ Common
 }
 .p-15{
     padding: .9375rem;
+}
+.pl-30{
+    padding-left: 30px;
 }
 .p-25{
     padding: 1.5625rem;
@@ -89,6 +93,12 @@ img{
     background-color: white;
     color: var(--secondary-color);
 }
+.start-btn{
+    background-color: white;
+    padding:5px;
+    border: none;
+    border-radius: 25px;
+}
 /**********************
 header
 ***********************/
@@ -99,7 +109,16 @@ header {
 header .main-nav{
     display: none;
 }
-   
+header .container {
+    align-items: center;
+}
+header .hamburger, .main-nav{
+    padding-right: .9375rem;
+}
+header .hamburger i{
+    font-size: 2em;
+}
+
 
 /**********************
 main
@@ -169,15 +188,23 @@ main
 }
 
 .benefits .card{
-    height: 300px;
     background-color: white;
 }
 
+.box-img-about-us{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.box-img{
+    width: 250px;
+    
+}
+.box-img img{
+    border-radius: 50%;
+}
 
 
-
-
-.about-us{
+.get-started{
     background-color: var(--secondary-color);
     
 }
@@ -185,6 +212,14 @@ main
     text-align: center;
     max-width: 37.5rem;
     margin: 0 auto;
+}
+/**********************
+ Footer 
+************************/
+
+footer{
+    background-color:#333333;
+    color: white;
 }
 
 /* TABLET */
@@ -207,7 +242,15 @@ main
     .benefits .card{
         width: calc(100% / 2 - 60px);
     }
+
+    .about-us .row{
+        flex-wrap: nowrap;
+    }
+    .box-img-about-us{
+        width: calc(100% / 3);
+    }
 }
+
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
